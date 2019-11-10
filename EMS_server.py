@@ -70,7 +70,7 @@ def IF_STATE_stateParams(request):
         return {
             "type" : "RES",
             "interface" : "IF.TR.stateParams",
-            "parameter" : { "stateOfcharge" : 30,
+            "parameter" : { "stateOfcharge" : 50,
                             "genRatio" : 10,
                             "lossRatio" : 15
                         },
@@ -122,7 +122,7 @@ def IF_TR_contractMsg(request):
 
 # Blockchain Interface (BI), acting as a server, receives request from PTM
 if __name__ == "__main__":
-    port = 9001
+    port = 9999
     server = Server(port)
 
     while True:
